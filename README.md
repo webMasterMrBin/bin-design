@@ -1,5 +1,5 @@
 .tsx 推荐使用eslint 校验
-暂时使用tslint
+暂时使用tslint, 不支持react-hooks exhaustive-deps rule(若启用则推荐使用eslint)
 
 后续版本 tslint可能会被废弃 推荐使用eslint校验
 
