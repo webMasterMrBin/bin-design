@@ -2,12 +2,12 @@ import React, { FC, useEffect, useState, useRef } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import classnames from 'classnames';
 
-interface ITabsProps {
+interface TabsProps {
   defaultActiveKey: number,
   onChange?: () => void,
 }
 
-interface ITabPaneProps {
+interface TabPaneProps {
   tab: string, // 每个tab名字
 }
 
@@ -38,14 +38,14 @@ const TabsContainer = styled.div`
   }
 `;
 
-const TabPane: FC<ITabPaneProps> = (props: any) => {
+const TabPane: FC<TabPaneProps> = (props: any) => {
   return (
     <>
     </>
   );
 };
 
-const Tabs: FC<ITabsProps> = props => {
+const Tabs: FC<TabsProps> = props => {
   const { defaultActiveKey, onChange } = props;
   const [Key, setKey] = useState(defaultActiveKey);
   const onChangeRef = useRef<any>();

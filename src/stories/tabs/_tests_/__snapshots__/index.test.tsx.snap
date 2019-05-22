@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test add onChange 1`] = `
+<div
+  class="sc-bdVaJa glNQyH"
+>
+  <div
+    class="tabs-header"
+  >
+    <div
+      class="active tabPane-content"
+    >
+      tab1
+    </div>
+    <div
+      class="tabPane-content"
+    >
+      tab2
+    </div>
+  </div>
+  <div
+    class="tabs-content"
+  >
+    tab1
+  </div>
+</div>
+`;
+
+exports[`snapshot test basic use 1`] = `
+<div
+  class="sc-bdVaJa glNQyH"
+>
+  <div
+    class="tabs-header"
+  >
+    <div
+      class="active tabPane-content"
+    >
+      tab1
+    </div>
+    <div
+      class="tabPane-content"
+    >
+      tab2
+    </div>
+  </div>
+  <div
+    class="tabs-content"
+  >
+    tab1
+  </div>
+</div>
+`;
