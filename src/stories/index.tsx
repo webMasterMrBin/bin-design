@@ -63,10 +63,10 @@ storiesOf('Tabs', module)
     },
     {
       info: {
-        text: 'Tabs 标签页组件',
         TableComponent: (props: any) => propsComponent([
           { param: 'tab(TabPane)', description: 'description', type: 'number', defaultValue: '' },
           { param: 'onChange(Tabs)', description: '切换tab触发事件', type: 'Function', defaultValue: '默认不绑定' }
-        ])
+        ]),
+        text: 'Tabs 标签页组件',
       }
     })

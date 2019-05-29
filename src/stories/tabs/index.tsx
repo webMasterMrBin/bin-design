@@ -54,7 +54,7 @@ const Tabs: FC<TabsProps> = props => {
   useEffect(() => {
     setKey(defaultActiveKey);
   }, [defaultActiveKey]);
-  
+
   // useEffect 在didMount时也会执行  保证在KEY变化调用onChange
   useEffect(() => {
     // 在didMount 后 调用onChange方法
@@ -64,7 +64,7 @@ const Tabs: FC<TabsProps> = props => {
     }
     onChangeRef.current = true;
   }, [Key]);
-  
+
   const TabPaneContent = React.Children.map(props.children, o => {
     if (React.isValidElement(o)) {
       if ((o as any).props.tab) {
@@ -75,14 +75,13 @@ const Tabs: FC<TabsProps> = props => {
     } else {
       throw new Error('There must be React.Element in Tabs.');
     }
-    console.log('o', o)
   });
 
   const tabActive = (index: number) => classnames({
     active: index === Key,
     "tabPane-content": true,
   });
-  
+
   const handleClick = (i: number) => (e: React.MouseEvent<HTMLElement>): void => {
     setKey(i);
   };
@@ -103,4 +102,4 @@ const Tabs: FC<TabsProps> = props => {
   );
 };
 
-export { Tabs, TabPane };
+export { Tabs, TabPane }
