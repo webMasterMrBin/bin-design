@@ -46,7 +46,7 @@ const TabPane: FC<TabPaneProps> = (props: any) => {
 };
 
 const Tabs: FC<TabsProps> = props => {
-  const { defaultActiveKey, onChange } = props;
+  const { defaultActiveKey, onChange, children } = props;
   const [Key, setKey] = useState(defaultActiveKey);
   const onChangeRef = useRef<any>();
 
@@ -65,7 +65,7 @@ const Tabs: FC<TabsProps> = props => {
     onChangeRef.current = true;
   }, [Key]);
 
-  const TabPaneContent = React.Children.map(props.children, o => {
+  const TabPaneContent = React.Children.map(children, o => {
     if (React.isValidElement(o)) {
       if ((o as any).props.tab) {
         return (o as any).props.tab;
@@ -94,8 +94,8 @@ const Tabs: FC<TabsProps> = props => {
             <div className={tabActive(i)} key={i} onClick={handleClick(i)}>{o}</div>
           ))}
         </div>
-        <div className="tabs-content">
-          {Array.isArray(TabPaneContent) && TabPaneContent[Key]}
+        <div className="tabPane-content">
+          {children && children[Key].props.children}
         </div>
       </TabsContainer>
     </ThemeProvider>

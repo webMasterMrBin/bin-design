@@ -5,6 +5,7 @@ import Button from './button';
 import { action } from '@storybook/addon-actions';
 import { text, boolean, number } from '@storybook/addon-knobs';
 import { Tabs, TabPane } from './tabs';
+import Todo from './todo';
 
 const CenterDecorator = (storyFn: any) => <div>{storyFn()}</div>;
 
@@ -70,3 +71,8 @@ storiesOf('Tabs', module)
         text: 'Tabs 标签页组件',
       }
     })
+    
+storiesOf('Todo', module)
+  .add('Todo',
+    () => (<Todo />)
+  )

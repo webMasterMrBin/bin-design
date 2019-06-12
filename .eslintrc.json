@@ -9,8 +9,9 @@
     "prettier",
     "prettier/@typescript-eslint"
   ],
-  "plugins": ["@typescript-eslint", "react-hooks", "prettier"],
+  "plugins": ["@typescript-eslint", "react-hooks", "prettier", "react"],
   "rules": {
+    "react/jsx-uses-vars": 1,
     "@typescript-eslint/explicit-function-return-type": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
