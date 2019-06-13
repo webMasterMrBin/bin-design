@@ -2,14 +2,16 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "jsx": true,
-    "useJSXTextNode": true
+    "useJSXTextNode": true,
+    "ecmaVersion":  2018,
+    "sourceType":  "module"
   },
   "extends": [
     "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "prettier/@typescript-eslint"
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
   ],
-  "plugins": ["@typescript-eslint", "react-hooks", "prettier", "react"],
+  "plugins": ["@typescript-eslint", "react-hooks", "react"],
   "rules": {
     "react/jsx-uses-vars": 1,
     "@typescript-eslint/explicit-function-return-type": "off",
