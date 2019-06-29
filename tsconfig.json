@@ -18,7 +18,24 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": false,
     "allowSyntheticDefaultImports": true,
-    "types": ["react", "jest"]
+    "types": ["react", "jest"],
+    "plugins": [
+      {
+        "transform": "typescript-plugin-styled-components",
+        "type": "config",
+        "displayName": true,
+        "minify": true
+      },
+      {
+        "name": "typescript-styled-plugin",
+        "tags": [
+          "Styled",
+          "styled",
+          "Sty",
+          "css"
+        ]
+      }
+    ]
   },
   "exclude": [
     "node_modules",

@@ -1,9 +1,13 @@
+const path = require('path');
 module.exports = ({ config }) => {
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
     use: [
       {
         loader: require.resolve('awesome-typescript-loader'),
+        options: {
+          getCustomTransformers: path.join(__dirname, './webpack.ts-transformers.js'),
+        }
       },
       {
         loader: require.resolve('@storybook/addon-storysource/loader'),

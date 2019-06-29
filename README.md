@@ -10,9 +10,12 @@
 - 组件单元测试学习编写(jest + enzyme + storybook test addon)
 - typescript 语法学习
 
-## 运行项目查看所有ui组件
+## 运行项目查看所有ui组件(开发环境)
 - `yarn storybook`
 - 😜![bin-design](./img/bin-design.gif)
+
+## build storybook 部署到server进行线上查看
+- `yarn build-storybook`
 
 ## 1.how to build and publish npm
 - 我使用webpack 打包ts react组件(注意事项, out.libraryTarget设置为 commonjs2, externals: react)
