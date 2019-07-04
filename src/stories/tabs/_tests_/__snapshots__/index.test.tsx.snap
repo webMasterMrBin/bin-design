@@ -19,9 +19,9 @@ exports[`snapshot test add onChange 1`] = `
     </div>
   </div>
   <div
-    class="tabs-content"
+    class="tabPane-content"
   >
-    tab1
+    TabContent1
   </div>
 </div>
 `;
@@ -45,9 +45,9 @@ exports[`snapshot test basic use 1`] = `
     </div>
   </div>
   <div
-    class="tabs-content"
+    class="tabPane-content"
   >
-    tab1
+    TabContent1
   </div>
 </div>
 `;

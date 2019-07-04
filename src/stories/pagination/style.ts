@@ -22,6 +22,7 @@ interface PageContainerProps {
 
 interface PageItemProps {
   variant?: string;
+  className: any;
 }
 
 const activeCss = css`
@@ -54,7 +55,9 @@ const PageTurning = styled.button<PageTurningProps>`
   }
 `;
 
-const PageItem = styled.div<PageItemProps>`
+const PageItem = styled.div.attrs(props => ({
+  className: 'pageitem-test',
+}))<PageItemProps>`
   ${staticCss}
   cursor: pointer;
   &.active {

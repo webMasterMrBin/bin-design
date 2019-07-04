@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test basic use 1`] = `
+<div
+  class="sc-htpNat ezYycK"
+>
+  <button
+    class="sc-bdVaJa cgEJQX"
+    disabled=""
+  >
+    &lt;
+  </button>
+  <div
+    class="active sc-bwzfXH kaLEQY"
+  >
+    1
+  </div>
+  <div
+    class="sc-bwzfXH kaLEQY"
+  >
+    2
+  </div>
+  <div
+    class="sc-bwzfXH kaLEQY"
+  >
+    3
+  </div>
+  <div
+    class="sc-bwzfXH kaLEQY"
+  >
+    4
+  </div>
+  <div>
+    &gt;&gt;
+  </div>
+  <div
+    class="sc-bwzfXH kaLEQY"
+  >
+    20
+  </div>
+  <button
+    class="sc-bdVaJa cgEJQX"
+  >
+    &gt;
+  </button>
+  <div
+    class="sc-bxivhb pJtMe"
+  >
+    跳转至
+    <input
+      type="text"
+    >
+      
+    </input>
+  </div>
+</div>
+`;
+
+exports[`snapshot test pagination snapshot 1`] = `
+<div
+  class="sc-htpNat ezYycK"
+>
+  <button
+    class="sc-bdVaJa cgEJQX"
+    disabled=""
+  >
+    &lt;
+  </button>
+  <div
+    class="active sc-bwzfXH pageitem-test kaLEQY"
+  >
+    1
+  </div>
+  <div
+    class="sc-bwzfXH pageitem-test kaLEQY"
+  >
+    2
+  </div>
+  <div
+    class="sc-bwzfXH pageitem-test kaLEQY"
+  >
+    3
+  </div>
+  <div
+    class="sc-bwzfXH pageitem-test kaLEQY"
+  >
+    4
+  </div>
+  <div>
+    &gt;&gt;
+  </div>
+  <div
+    class="sc-bwzfXH pageitem-test kaLEQY"
+  >
+    10
+  </div>
+  <button
+    class="sc-bdVaJa cgEJQX"
+  >
+    &gt;
+  </button>
+  <div
+    class="sc-bxivhb pJtMe"
+  >
+    跳转至
+    <input
+      type="text"
+    >
+      
+    </input>
+  </div>
+</div>
+`;

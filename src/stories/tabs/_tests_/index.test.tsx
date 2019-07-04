@@ -11,22 +11,22 @@ describe('snapshot test', () => {
   it('basic use', () => {
     const wrapper = render(
       <Tabs defaultActiveKey={0}>
-        <TabPane tab="tab1">TabContent1</TabPane>
+        <TabPane tab="tab1">TabContent166</TabPane>
         <TabPane tab="tab2">Tabcontent222</TabPane>
       </Tabs>
     );
-    
+
     expect(toJson(wrapper)).toMatchSnapshot();
   });
-  
+
   it('add onChange', () => {
     const wrapper = render(
       <Tabs defaultActiveKey={0} onChange={() => console.log('now onchange')}>
         <TabPane tab="tab1">TabContent1</TabPane>
-        <TabPane tab="tab2">Tabcontent222</TabPane>
+        <TabPane tab="tab2">Tabcontent22255</TabPane>
       </Tabs>
     );
-    
+
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
